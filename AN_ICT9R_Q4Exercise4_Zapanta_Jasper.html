@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">\
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Q4Exercise4</title>
+</head>
+<body class="bg-warning">
+	<br>
+	<br>
+	<div class="container bg-light text-center p-5 rounded" >
+		<h2>Length Converter</h2>
+		<h6>Days to Hours</h6>
+		<input type="number" id="days" class="rounded" name="Length convert" size="6"><br><br>
+		<input type="Submit" value="CALCULATE" class="btn btn-primary" onclick="Calculate_Length()">
+		<br>
+	</div>
+	<script type="text/javascript">
+		function Calculate_Length(){
+			let num1 = document.getElementById('days').value;
+			let product = num1 * 24;
+			alert("Its : " + product)
+		}
+	</script>
+</body>
+</html>
